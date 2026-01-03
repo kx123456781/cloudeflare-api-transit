@@ -1041,7 +1041,7 @@ function handleCORS() {
   } finally {
     writer.close();
   }
-}
+
 
 async function streamGeminiToOpenAI(readableStream, writable, model) {
   const writer = writable.getWriter();
