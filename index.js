@@ -153,7 +153,7 @@ async function handleChatCompletion(request, env) {
         return jsonResponse({ 
           error: `Cannot auto-detect provider for model: ${model}`,
           hint: 'Please specify "provider" field explicitly in request body',
-          example: { provider: 'openai', model: 'gpt-4', messages: [...] }
+          example: { provider: 'openai', model: 'gpt-4', messages: [{ role: 'user', content: 'Hello' }] }
         }, 400);
       }
     }
