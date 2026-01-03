@@ -1,0 +1,5 @@
+{
+  "name": "cloudeflare-api-transit", // 匹配 CI 期望的 Worker 名称，解决警告
+  "compatibility_date": "2026-01-03", // 日志提示的必填日期
+  "main": "index.js" // 入口文件路径（与你的脚本一致）
+}
